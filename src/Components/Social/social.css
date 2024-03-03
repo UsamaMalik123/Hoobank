@@ -1,0 +1,22 @@
+.app__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+  }
+  
+  .app__social img {
+    width: calc(25% - 30px); /* 50% width with 10px margin on each side */
+    height: auto;
+    margin: 15px;
+  }
+  
+  /* Media query for mobile screens */
+  @media only screen and (max-width: 760px) {
+    .app__social img {
+     
+            width: calc(50% - 30px); /* Adjusted width for two images per row on mobile screens */
+       
+    }
+  }
+  

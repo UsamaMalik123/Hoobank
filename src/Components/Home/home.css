@@ -1,0 +1,157 @@
+.app__home{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+.app__home-contentsection{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+ 
+}
+
+.app__home-contentsection-top{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(125.17deg, #272727 0%, #11101D 100%);
+    padding: 1px 8px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 390px;
+}
+.app__home-contentsection-top img{
+    height: 60px;
+    width: 60px;
+}
+.app__home-contentsection-top p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    color: rgb(215, 209, 209);
+    
+    text-align: center;
+
+}
+.app__home-contentsection-top span{
+    color: white;
+    font-weight: 600;
+}
+
+.app__home-contentsection-nextgenimg{
+    display: flex;
+    flex-direction: row;
+     
+    
+    
+}
+.app__home-contentsection-nextgenimg h1 {
+    font-family: Poppins;
+    
+    font-size: 72px;
+    font-weight: 600;
+     
+    letter-spacing: 0.01em;
+    color: white;
+    max-width: 550px;
+    text-align: left;
+
+}
+.app__home-contentsection-nextgenimg-para{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:   #FFFFFFB2;
+    max-width: 380px;
+    font-weight: 500;
+
+}
+ 
+.app__home-contentsection-nextgenimg img{
+    width: 140px;
+    height: 140px;
+    margin-top: 1rem;
+ 
+    
+}
+.app__home-imgsection img{
+    height: 100%;
+    width: 100%;
+}
+
+ /* Media queries */
+
+@media screen and (max-width: 768px) {
+    .app__home{
+  
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+            
+           
+     
+       
+    }
+    .app__home-contentsection-top {
+      max-width: 300px;
+    }
+  
+    .app__home-contentsection-nextgenimg h1 {
+      font-size: 40px;
+    }
+  
+    .app__home-contentsection-nextgenimg-para {
+      font-size: 16px;
+      line-height: 26px;
+      max-width: 280px;
+    }
+  
+    .app__home-contentsection-nextgenimg img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .app__home-contentsection-top{
+        flex-direction: column;
+        padding: 1px 8px;
+        
+    }
+    .app__home-contentsection-top img{
+        height: 80px;
+        width: 80px;
+         
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .app__home-contentsection-top {
+      max-width: 250px;
+    }
+  
+    .app__home-contentsection-nextgenimg h1 {
+      font-size: 32px;
+    }
+  
+    .app__home-contentsection-nextgenimg-para {
+      font-size: 14px;
+      line-height: 22px;
+      max-width: 220px;
+    }
+  
+    .app__home-contentsection-nextgenimg img {
+      width: 80px;
+      height: 80px;
+    }
+  }

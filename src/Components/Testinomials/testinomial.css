@@ -1,0 +1,80 @@
+.app__testinomial{
+    display: flex;
+    flex-direction: column;
+}
+.app__testinomial-headingsection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.app__testinomial-headingsection h1{
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    max-width: 500px;
+
+}
+.app__testinomial-headingsection p{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #FFFFFFB2;
+    max-width: 500px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+.app__testinomial-testinomial{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.app__testinomial-testinomial div{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 20px;
+
+
+}
+
+@media screen and (max-width:1024px) {
+    .app__testinomial-headingsection{
+        flex-direction: column;
+    }
+
+    .app__testinomial-headingsection h1{
+        line-height: 62px;
+    }
+    .app__testinomial-headingsection p{
+        margin-top: 0;
+    }
+    .app__testinomial-testinomial{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .app__testinomial-testinomial div{
+        width: 80%;
+    }
+     
+}
+@media screen and (max-width:650px) {
+    .app__testinomial-testinomial div{
+        width: 100%;
+        height: auto;
+        padding: 0.6rem;
+        border-radius: 20px;
+    
+    
+    }
+}

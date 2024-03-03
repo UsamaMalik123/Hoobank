@@ -1,0 +1,97 @@
+.app__business{
+    display: flex;
+   flex-direction: row;
+     
+}
+.app__business-leftside{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+    width: 100%;
+}
+.app__business-leftside h1{
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 77px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #FFFFFF;
+    max-width: 500px;
+
+}
+
+.app__business-leftside p{
+    font-family: Abel;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #FFFFFFB2;
+    max-width: 500px;
+}
+.app__business-leftside button{
+    width: 170px;
+    height: 64px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #00040E;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+   
+     border: none;
+
+}
+.app__business-rightside{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+}
+.app__business-rightside div{
+    border-radius: 20px;
+    padding-left: 1rem;
+}
+@media (max-width: 900px) {
+    .app__business{
+     
+        flex-direction: column;
+         
+    }
+    .app__business-leftside{
+     
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .app__business-rightside div{
+        border-radius: 20px;
+        padding-left: 3px;
+    }
+    .app__business-leftside h1{
+            font-size: 30px;
+            line-height: 47px;
+    }
+    .app__business-leftside button {
+        
+            width: 130px;
+            height: 38px;
+         
+            border-radius: 10px;
+          
+           
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 27px;
+            letter-spacing: 0em;
+            margin-top: 20px;
+             border: none;
+   
+    }
+}

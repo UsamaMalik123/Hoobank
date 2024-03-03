@@ -1,0 +1,99 @@
+.app__navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__navbar-logo img {
+  width: 150px;
+}
+
+.app__navbar .app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  list-style: none;
+}
+
+.app__navbar .app__navbar-links li {
+  margin: 0 1rem;
+  font-weight: 600;
+}
+
+.app__navbar .app__navbar-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.app__navbar .app__navbar-links li a:hover {
+  color: grey;
+}
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(44, 53, 52, 1) 0%, rgba(12, 105, 117, 1) 100%, rgba(73, 63, 73, 1) 100%);
+
+  flex-direction: column;
+  z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.app__navbar-smallscreen_links {
+  list-style: none;
+  padding: 0; /* Remove default padding */
+}
+
+.app__navbar-smallscreen_links li {
+  padding: 1rem; /* Add padding for spacing */
+}
+
+.app__navbar-smallscreen_links li a {
+  color: white; /* Set text color to white */
+  font-size: 1.5rem; /* Adjust font size */
+  text-decoration: none; /* Remove underline */
+}
+
+.app__navbar-smallscreen_links li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
+}
+
+@media screen and (max-width: 1150px) {
+  .app__navbar .app__navbar-links {
+    display: none;
+  }
+
+  .app__navbar-smallscreen {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__navbar {
+    padding: 1rem;
+  }
+
+  .app__navbar-logo img {
+    width: 110px;
+  }
+}

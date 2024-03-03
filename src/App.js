@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import Home from './Components/Home/Home';
+import Review from './Components/Review/Review';
+import Business from './Components/Business/Business';
+import BillingInvoice from './Components/BillingInvoice/BillingInvoice';
+import CardDeal from './Components/CardDeal/CardDeal';
+import Testinomial from './Components/Testinomials/Testinomial';
+import Social from './Components/Social/Social';
+import Letstry from './Components/LetsTry/Letstry';
+import Footer from './Components/Footer/Footer';
+ 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg_gradient">
+      <Navbar/>
+      <Home/>
+      <Review/>
+      <Business/>
+      <BillingInvoice/>
+      <CardDeal/>
+      <Testinomial/>
+      <Social/>
+      <Letstry/>
+      <Footer/>
     </div>
   );
 }

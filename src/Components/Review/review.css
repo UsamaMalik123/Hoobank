@@ -1,0 +1,74 @@
+.app__review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.app__review_users_and_numbers {
+    display: flex;
+
+    width: calc(33.33% - 20px); /* Adjust width to accommodate three items with gap */
+    flex-direction: row;
+    
+    align-items: center;
+    gap: 20px;
+}
+
+.app__review_users_and_numbers h1 {
+    font-family: Poppins;
+    font-size: 41px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+}
+
+.app__review_users_and_numbers p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.empty-div {
+    height: 15px;
+ 
+    border: 1px solid  #FFFFFF99;
+}
+
+ 
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .app__review_users_and_numbers {
+        width: 100%; /* Set full width for smaller screens */
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+         
+    }
+    .app__review_users_and_numbers div {
+     display: none;
+    }
+    .app__review {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         
+    }
+
+    .app__review_users_and_numbers h1 {
+        font-size: 32px; /* Decrease font size for smaller screens */
+        line-height: 42px; /* Adjust line height accordingly */
+    }
+
+    .app__review_users_and_numbers p {
+        font-size: 16px; /* Decrease font size for smaller screens */
+        line-height: 22px; /* Adjust line height accordingly */
+    }
+}
