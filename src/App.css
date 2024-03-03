@@ -32,8 +32,9 @@ p {
   
 {
   /* global 94%+ browsers support */
-  background: linear-gradient(90deg, rgba(44, 53, 52, 1) 0%, rgba(12, 105, 117, 1) 100%, rgba(73, 63, 73, 1) 100%);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(220, 227, 226, 1) 0%, rgba(0, 30, 28, 1) 0%, rgba(132, 133, 133, 1) 0%, rgba(5, 20, 19, 1) 100%);
 }
+              
 
 .silver_gradient{
   background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101D 95.11%);

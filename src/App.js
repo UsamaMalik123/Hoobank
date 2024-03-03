@@ -22,8 +22,9 @@ function App() {
       <BillingInvoice/>
       <CardDeal/>
       <Testinomial/>
-      <Social/>
+     
       <Letstry/>
+      <Social/>
       <Footer/>
     </div>
   );
